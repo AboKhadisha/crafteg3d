@@ -186,6 +186,24 @@
             color: #4a5568;
         }
 
+
+            <!-- شركاؤنا -->
+    <section class="partners">
+        <div class="container">
+            <h2>🤝 شركاؤنا</h2>
+            <p>نفتخر بالتعاون مع كبرى شركات التطوير العقاري في مصر والخليج</p>
+            <div class="partners-content">
+                <a href="https://sites.google.com/view/brokerindexvpresentation2026/broker-index" target="_blank" class="broker-index-link">
+                    <div class="broker-index-box">
+                        <h3>BROKER INDEX</h3>
+                        <p>شاهد جميع شركائنا من المطورين العقاريين</p>
+                        <span class="view-more">عرض المزيد →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
         footer { text-align: center; padding: 2rem; color: #718096; font-size: 0.9rem; }
 
         /* Multi-language support classes */
@@ -193,6 +211,58 @@
         html[lang="en"] .ar { display: none; }
         html[lang="en"] .en { display: block; }
         html[lang="en"] { direction: ltr; }
+
+                /* Partners Section */
+        .partners {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .partners h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .partners p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .broker-index-link {
+            text-decoration: none;
+            display: inline-block;
+        }
+        .broker-index-box {
+            background: white;
+            padding: 60px 80px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .broker-index-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        .broker-index-box h3 {
+            color: #2a5298;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .broker-index-box p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .view-more {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
     </style>
 </head>
 <body>
