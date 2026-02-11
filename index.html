@@ -3,302 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="محمد هنداوي - مهندس معماري متخصص في تصميم النماذج المعمارية ثلاثية الأبعاد. خدمات احترافية في السعودية، الإمارات، الكويت، قطر، البحرين، عمان. CraftEG 3D">
-    <meta name="keywords" content="مهندس معماري، نماذج ثلاثية الأبعاد، تصميم معماري، محمد هنداوي، السعودية، الإمارات، الخليج، 3D modeling, architectural design, CraftEG 3D">
-    <meta name="author" content="محمد هنداوي">
+    <title>محمد هنداوي | Architectural Scale Models & VR/AR Real Estate</title>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="محمد هنداوي - متخصص في نماذج المعمارية المصغرة (Architectural Scale Models) وحلول VR/AR للتسويق العقاري. نخدم المطورين في مصر والسعودية والخليج.">
+    <meta name="keywords" content="architectural scale models, architectural maquettes, real estate VR tours, virtual reality real estate, 3D printed architectural models, نماذج معمارية, ماكيتات معماري, تسويق عقاري VR, السعودية, مصر, الخليج, City Scale">
+    <meta name="author" content="محمد هنداوي">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://abokhadisha.github.io/crafteg3d/">
-    <meta property="og:title" content="محمد هنداوي - مهندس معماري | نماذج ثلاثية الأبعاد">
-    <meta property="og:description" content="مهندس معماري متخصص في تصميم وتنفيذ النماذج المعمارية ثلاثية الأبعاد. خدمات احترافية في دول الخليج العربي">
+    <meta property="og:title" content="محمد هنداوي | Architectural Scale Models & VR/AR Specialist">
+    <meta property="og:description" content="High-precision architectural scale models and immersive VR/AR experiences for real estate developers in Egypt, KSA, and GCC.">
     <meta property="og:image" content="https://abokhadisha.github.io/crafteg3d/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://abokhadisha.github.io/crafteg3d/">
-    <meta property="twitter:title" content="محمد هنداوي - مهندس معماري | نماذج ثلاثية الأبعاد">
-    <meta property="twitter:description" content="مهندس معماري متخصص في تصميم وتنفيذ النماذج المعمارية ثلاثية الأبعاد. خدمات احترافية في دول الخليج العربي">
-    <meta property="twitter:image" content="https://abokhadisha.github.io/crafteg3d/og-image.jpg">
-    
-    <!-- Geo Tags -->
-    <meta name="geo.region" content="SA">
-    <meta name="geo.placename" content="Saudi Arabia">
-    
-    <!-- Language -->
-    <meta http-equiv="content-language" content="ar">
-    
-    <!-- Google Site Verification (you'll need to get this from Google Search Console) -->
-    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
-    
-    <!-- Structured Data / Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "محمد هنداوي",
-      "jobTitle": "مهندس معماري",
-      "description": "مهندس معماري متخصص في تصميم وتنفيذ النماذج المعمارية ثلاثية الأبعاد",
-      "url": "https://abokhadisha.github.io/crafteg3d/",
-      "email": "m.hendawy@city-scale.com",
-      "telephone": ["+966546957432", "+201001900520"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "SA"
-      },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "CraftEG 3D",
-        "url": "https://crafteg3d.com"
-      },
-      "knowsAbout": ["Architectural Design", "3D Modeling", "Architectural Visualization", "Project Management"],
-      "sameAs": [
-        "https://abokhadisha.github.io/crafteg3d/"
-      ]
-    }
-    </script>
-    <title>محمد هنداوي - مهندس معماري</title>
+
     <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --accent-color: #f6ad55;
+            --text-color: #2d3748;
+            --bg-color: #f7fafc;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
-            color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 2rem 0;
+            padding: 4rem 2rem;
             text-align: center;
+            position: relative;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+        [dir="ltr"] .lang-switch {
+            left: auto;
+            right: 20px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid white;
+            color: white;
+            padding: 5px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+            max-width: 1000px;
+            margin: -2rem auto 2rem;
+            padding: 0 1rem;
         }
 
-        section {
-            margin-bottom: 3rem;
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
         }
 
-        h2 {
-            color: #1e3c72;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid #2a5298;
-            padding-bottom: 0.5rem;
-        }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; }
+        h2 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); display: inline-block; margin-bottom: 1.5rem; padding-bottom: 0.5rem; }
+        h3 { color: var(--secondary-color); margin: 1.5rem 0 0.5rem; }
 
-        .about {
-            background: #f4f4f4;
-            padding: 2rem;
-            border-radius: 8px;
-        }
-
-        .skills {
+        .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
+            margin-top: 1rem;
         }
 
-        .skill-card {
-            background: white;
+        .skill-item {
             padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            background: #f8fafc;
+            border-right: 4px solid var(--accent-color);
+            border-radius: 5px;
         }
 
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        }
-
-        .skill-card h3 {
-            color: #2a5298;
-            margin-bottom: 0.5rem;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .project-content {
-            padding: 1.5rem;
-        }
-
-        .project-content h3 {
-            color: #1e3c72;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact {
-            background: #1e3c72;
-            color: white;
-            padding: 3rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .contact h2 {
-            color: white;
-            border-bottom-color: white;
+        [dir="ltr"] .skill-item {
+            border-right: none;
+            border-left: 4px solid var(--accent-color);
         }
 
         .contact-info {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
+            flex-direction: column;
+            gap: 1rem;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 10px;
         }
 
-        .contact-item a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
+        a { color: var(--secondary-color); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
 
-        .contact-item a:hover {
-            opacity: 0.8;
-        }
-
-        footer {
-            background: #1a1a1a;
-            color: white;
-            text-align: center;
+        .project-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
             padding: 1.5rem;
-            margin-top: 3rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            .skills, .projects {
-                grid-template-columns: 1fr;
-            }
+        .tag {
+            display: inline-block;
+            background: #edf2f7;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            color: #4a5568;
         }
+
+        footer { text-align: center; padding: 2rem; color: #718096; font-size: 0.9rem; }
+
+        /* Multi-language support classes */
+        .en { display: none; }
+        html[lang="en"] .ar { display: none; }
+        html[lang="en"] .en { display: block; }
+        html[lang="en"] { direction: ltr; }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>محمد هنداوي</h1>
-        <p>مهندس معماري | مصمم نماذج ثلاثية الأبعاد</p>
+        <div class="lang-switch">
+            <button class="lang-btn ar" onclick="switchLang('en')">English</button>
+            <button class="lang-btn en" onclick="switchLang('ar')">عربي</button>
+        </div>
+        <h1 class="ar">محمد هنداوي</h1>
+        <h1 class="en">Mohamed Hendawy</h1>
+        <p class="subtitle ar">مدير تطوير الأعمال | نماذج معمارية وحلول واقع افتراضي</p>
+        <p class="subtitle en">Business Development Manager | Architectural Scale Models & VR Solutions</p>
     </header>
 
     <div class="container">
-        <section class="about">
-            <h2>عن محمد</h2>
-            <p>مهندس معماري متخصص في تصميم وتنفيذ النماذج المعمارية ثلاثية الأبعاد باستخدام أحدث التقنيات. أعمل على تحويل الأفكار المعمارية إلى نماذج واقعية دقيقة تساعد المعماريين والمطورين على تصور مشاريعهم بشكل أفضل.</p>
+        <section class="card">
+            <h2 class="ar">عن محمد</h2>
+            <h2 class="en">About Me</h2>
+            <p class="ar">
+                متخصص في إدارة وتطوير مشروعات <strong>النماذج المعمارية المصغرة (Architectural Scale Models)</strong> ودمج تقنيات <strong>الواقع الافتراضي والمعزز (VR/AR)</strong> في التسويق العقاري. أعمل مع كبار المطورين في مصر والسعودية والخليج لتقديم نماذج تفاعلية عالية الدقة تساعد في إغلاق الصفقات العقارية الكبرى.
+            </p>
+            <p class="en">
+                Specialized in managing and developing <strong>Architectural Scale Models</strong> and integrating <strong>VR/AR technologies</strong> into real estate marketing. Working with top developers in Egypt, KSA, and GCC to provide high-precision interactive models that drive property sales.
+            </p>
         </section>
 
-        <section>
-            <h2>المهارات والخبرات</h2>
-            <div class="skills">
-                <div class="skill-card">
-                    <h3>التصميم المعماري</h3>
-                    <p>خبرة في تصميم المباني السكنية والتجارية والعامة مع التركيز على الجمالية والوظيفية.</p>
+        <section class="card">
+            <h2 class="ar">الخدمات والحلول</h2>
+            <h2 class="en">Services & Solutions</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3 class="ar">النماذج المعمارية (Maquettes)</h3>
+                    <h3 class="en">Architectural Scale Models</h3>
+                    <p class="ar">تنفيذ نماذج فيزيائية (Physical Scale Models) للمخططات الرئيسية والمباني السكنية والتجارية بدقة متناهية.</p>
+                    <p class="en">High-precision physical scale models for masterplans, residential, and commercial projects.</p>
                 </div>
-                <div class="skill-card">
-                    <h3>النمذجة ثلاثية الأبعاد</h3>
-                    <p>إتقان برامج النمذجة الحديثة لإنشاء نماذج معمارية دقيقة وواقعية.</p>
+                <div class="skill-item">
+                    <h3 class="ar">الواقع الافتراضي (Real Estate VR)</h3>
+                    <h3 class="en">Real Estate VR Tours</h3>
+                    <p class="ar">إنشاء جولات افتراضية غامرة (Immersive Virtual Tours) تتيح للعملاء تجربة الوحدات العقارية قبل بنائها.</p>
+                    <p class="en">Creating immersive virtual tours that allow clients to experience property units before they are built.</p>
                 </div>
-                <div class="skill-card">
-                    <h3>التصور المعماري</h3>
-                    <p>إنشاء عروض بصرية متقدمة تساعد العملاء على فهم المشاريع بشكل أفضل.</p>
+                <div class="skill-item">
+                    <h3 class="ar">تطوير الأعمال العقارية</h3>
+                    <h3 class="en">Real Estate BizDev</h3>
+                    <p class="ar">استشارات تقنية لشركات التطوير العقاري لتحسين أدوات العرض والمبيعات باستخدام الـ interactive models.</p>
+                    <p class="en">Technical consultancy for developers to enhance presentation and sales tools using interactive models.</p>
                 </div>
-                <div class="skill-card">
-                    <h3>إدارة المشاريع</h3>
-                    <p>التنسيق الفعال بين فرق العمل لضمان تسليم المشاريع في الوقت المحدد وبأعلى جودة.</p>
+                <div class="skill-item">
+                    <h3 class="ar">الطباعة ثلاثية الأبعاد</h3>
+                    <h3 class="en">3D Printed Models</h3>
+                    <p class="ar">استخدام أحدث تقنيات الـ 3D Printing لإنتاج تفاصيل معمارية معقدة بدقة وسرعة عالية.</p>
+                    <p class="en">Using advanced 3D printing technologies to produce complex architectural details with high speed and precision.</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>أبرز المشاريع</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                        مشروع سكني
-                    </div>
-                    <div class="project-content">
-                        <h3>مجمع سكني حديث</h3>
-                        <p>تصميم وتنفيذ نماذج ثلاثية الأبعاد لمجمع سكني فاخر يضم 200 وحدة سكنية.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                        مشروع تجاري
-                    </div>
-                    <div class="project-content">
-                        <h3>مركز تجاري متعدد الطوابق</h3>
-                        <p>نموذج معماري شامل لمركز تجاري بمساحة 50,000 متر مربع.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                        مشروع عام
-                    </div>
-                    <div class="project-content">
-                        <h3>مركز ثقافي</h3>
-                        <p>تصميم نموذج لمركز ثقافي يجمع بين العمارة التقليدية والحديثة.</p>
-                    </div>
-                </div>
+        <section class="card">
+            <h2 class="ar">أبرز مجالات الخبرة</h2>
+            <h2 class="en">Key Expertise</h2>
+            <div class="project-card">
+                <span class="tag">Masterplan Models</span>
+                <h3 class="ar">نماذج المخططات العمرانية</h3>
+                <h3 class="en">Urban Planning Models</h3>
+                <p class="ar">خبرة في توريد وتنفيذ نماذج المدن الذكية والمجمعات الكبرى في نيوم والرياض والقاهرة.</p>
+                <p class="en">Expertise in delivering smart city models and large complexes in Neom, Riyadh, and Cairo.</p>
+            </div>
+            <div class="project-card">
+                <span class="tag">Interactive Solutions</span>
+                <h3 class="ar">نماذج تفاعلية بإضاءة ذكية</h3>
+                <h3 class="en">Interactive Models with Smart Lighting</h3>
+                <p class="ar">ربط النماذج الفيزيائية بشاشات اللمس والتحكم في الإضاءة لعرض حالة الوحدات (مباع/متاح).</p>
+                <p class="en">Linking physical models with touchscreens and smart lighting to show unit status (Sold/Available).</p>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>تواصل معي</h2>
+        <section class="card">
+            <h2 class="ar">تواصل معي</h2>
+            <h2 class="en">Contact Me</h2>
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📧</span>
@@ -306,26 +233,35 @@
                 </div>
                 <div class="contact-item">
                     <span>📱</span>
-                    <sspan>📱 (EG)</span>
-                                        <span dir="ltr">+20 100 190 0520</span>
+                    <span dir="ltr">+20 100 190 0520 (EG)</span>
                 </div>
                 <div class="contact-item">
-                    <span>📱 (SA)</span>
-                                        <span dir="ltr">+966 54 695 7432</span>
-        
+                    <span>📱</span>
+                    <span dir="ltr">+966 54 695 7432 (SA)</span>
                 </div>
-                                <div class="contact-item">
+                <div class="contact-item">
                     <span>🌐</span>
-                    <a href="#">crafteg3d.com</a>
-                </div>
-                    
+                    <a href="https://abokhadisha.github.io/crafteg3d/">crafteg3d.com</a>
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 محمد هنداوي. جميع الحقوق محفوظة.</p>
+        <p class="ar">&copy; 2026 محمد هنداوي. جميع الحقوق محفوظة.</p>
+        <p class="en">&copy; 2026 Mohamed Hendawy. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Load saved language or detect
+        const savedLang = localStorage.getItem('preferredLang') || 'ar';
+        switchLang(savedLang);
+    </script>
 </body>
 </html>
