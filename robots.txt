@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abokhadisha.github.io/crafteg3d/sitemap.xml
