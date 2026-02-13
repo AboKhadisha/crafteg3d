@@ -1,4 +1,32 @@
+# Robots.txt for crafteg3d - Architectural Scale Models & VR/AR Real Estate
+# ملف تعليمات محركات البحث - مجسمات معمارية وحلول VR/AR
+
+# Allow all search engines to crawl everything
 User-agent: *
 Allow: /
 
+# Disallow specific paths (if needed in future)
+Disallow: /admin/
+Disallow: /*.json$
+
+# Main Sitemap Location
 Sitemap: https://abokhadisha.github.io/crafteg3d/sitemap.xml
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot  
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Crawl-delay (optional - use if server is slow)
+# Crawl-delay: 1
